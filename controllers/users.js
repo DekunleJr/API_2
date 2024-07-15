@@ -37,7 +37,7 @@ export const patchUser = (req, res) => {
     const { id } = req.params;
     const { firstName, lastName, age } = req.body;
 
-    const user = user.find((user) => user.id == id);
+    const user = user.find((user) => user.id === id);
 
     if(firstName) user.firstName = firstName;
     if(lastName) user.lastName = lastName;
